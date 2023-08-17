@@ -1,0 +1,111 @@
+:root {
+    --color-primary: red;
+    --color-secundary:lightgreen;
+    --bg-primary: gray;
+    --size-h1: 3em;
+}
+
+h1{
+    /* declarando variável localmente */
+    /* --color-h1: orange; */
+    /* a segunda cor serve para caso a primeira linhas esteja vazia e dai a cor não funciona */
+    /* color:var(--color-h1, red) */
+    font-size: var(--size-h1);
+    color: var(--color-primary);
+    background-color: var(--bg-primary);
+}
+
+p{
+    color: var(--color-primary);
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color:orange;
+}
+
+a:focus{
+    color: pink;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+a:active {
+    color: lime;
+}
+
+ul li:first-child {
+    color:red
+}
+
+ul li:last-child {
+    color:green;
+}
+
+/* ul li:nth-child(even) {
+    background-color: gray;
+} */
+
+/* ul li:nth-child(odd) {
+    background-color: gray;
+} */
+
+ul li:nth-child(1) {
+    background-color: palevioletred;
+}
+
+/* 2n duas vezes ele mesmo, seleciona elementos multiplos de 2 */
+/* aceita valor matemático */
+/* ul li:nth-child(2n-1) {
+    background-color: palevioletred;
+}
+
+ul li:last-child(1) {
+    background-color: blue;
+} */
+
+ ul li:nth-of-type(1) {
+    background-color: lightcoral;
+} 
+
+/* .container :nth-of-type(1) {
+    background-color: lime;
+}  */
+
+.container :nth-child(2) {
+    background-color: lightseagreen;
+}
+
+input:disabled {
+    background-color: darkgrey;
+}
+
+input:invalid {
+    color: red;
+}
+
+p::before {
+    content: '*';
+    font-size: 2em;
+    color: purple;
+}
+
+p::after {
+    content: 'ok!!!';
+    font-size: 1.5em;
+    color: green;
+}
+
+.exemplo a::after {
+    content: " | ";
+    font-weight: bold;
+}
