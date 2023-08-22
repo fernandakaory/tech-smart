@@ -186,6 +186,9 @@ footer {
     background-color:var(--cor-secundaria);
 }
 .rodape__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     text-align: center;
 }
 
